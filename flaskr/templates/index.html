@@ -9,13 +9,25 @@
     <body>
 
         <div class="container">
+
             <div class="container-content">
                 <h2>GT Food Truck</h2>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username"><br><br>
-                <label for="password">Password:</label>
-                <input type="text" id="password" name="password">
+                
+                <form method="POST">
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username"><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8"><br><br>
+                    <div class="buttons">
+                        <button type="submit">Log In</button>
+                        <button type="submit">Register</button>
+                    </div>
+
+                </form>
+                
             </div>
+            
             
         </div>
         
