@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>GT Food Truck</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="container-content">
+                <h2>Register</h2>
+
+                <form method="POST">
+
+                    <div class="left-column">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username"><br><br>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" minlength="8"><br><br>
+                        <label for="balance">Balance:</label>
+                        <input type="text" id="balance" name="balance"><br><br>
+                    </div>
+    
+                    <div class="right-column">
+                        <label for="email">Email:</label>
+                        <input type="text" id="username" name="username"><br><br>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="confirm">Confirm Password:</label>
+                        <input type="password" id="confirm" name="confirm" minlength="8"><br><br>
+                        <input type="radio" id="admin" name="user" value="admin">
+                        <label for="admin">Admin</label>
+                        <input type="radio" id="manager" name="user" value="manager">
+                        <label for="manager">Manager</label>
+                        <input type="radio" id="staff" name="user" value="staff">
+                        <label for="staff">Staff</label>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="button">Back</button>
+                        <button type="submit">Register</button>
+                    </div>
+
+                </form>
+    
+                
+            </div>
+            
+            
+        </div>
+        
+    </body>
+
+
+
+</html>

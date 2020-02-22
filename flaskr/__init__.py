@@ -1,6 +1,7 @@
 import os
 
 from flask import Flask, render_template
+from . import register
 
 
 def create_app(test_config=None):
@@ -28,5 +29,8 @@ def create_app(test_config=None):
     @app.route('/')
     def home():
         return render_template('index.html')
+
+
+    app.register_blueprint(register.register)
 
     return app
