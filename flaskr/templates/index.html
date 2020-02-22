@@ -3,14 +3,22 @@
 
     <head>
         <title>GT Food Truck</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
     </head>
 
     <body>
-        <h2>GT Food Truck</h2>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Password</label>
-        <input type="text" id="password" name="password">
+
+        <div class="container">
+            <div class="container-content">
+                <h2>GT Food Truck</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password">
+            </div>
+            
+        </div>
+        
     </body>
 
 
